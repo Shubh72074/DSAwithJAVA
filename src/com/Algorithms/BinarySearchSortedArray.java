@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BinarySearchSortedArray {
     public static void main(String[] args) {
         int[] arr = {45,43,36,26,14,8,3,1};
-        int target = 67;
+        int target = 14;
 
 //        if (binarySearch(arr,target)){
 //            System.out.println("FOUND");
