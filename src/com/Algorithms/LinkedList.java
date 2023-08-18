@@ -1,5 +1,7 @@
 package com.Algorithms;
 
+import java.util.Scanner;
+
 public class LinkedList {
     public static void main(String[] args) {
         Node node = new Node();
@@ -12,6 +14,13 @@ public class LinkedList {
         while (node != null) {
             System.out.println(node.val);
             node = node.next;
+        }
+        System.out.println("ENTER '0' TO EXIT");
+        int input = 1;
+        while (input != 0) {
+            System.out.print("ENTER VAL: ");
+            Scanner val = new Scanner(System.in);
+
         }
     }
 }
