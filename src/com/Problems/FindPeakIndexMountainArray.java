@@ -2,13 +2,14 @@ package com.Problems;
 
 public class FindPeakIndexMountainArray {
     public static void main(String[] args) {
-        int[] arr = {1,2,400,51,8,3,2,1,0};
-        int target = 1;
-        int peak = returnPeak(arr);
-        int search = findIndex(arr, target, 0, peak);
+        int[] nums = {4,5,6,7,0,1,2};
+        int target = 0;
+
+        int peak = returnPeak(nums);
+        int search = findIndex(nums, target, 0, peak);
 
         if ( search == -1) {
-            search = findIndex(arr, target, peak + 1, arr.length - 1);
+            search = findIndex(nums, target, peak + 1, nums.length - 1);
         }
 
         System.out.println(search);
