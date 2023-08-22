@@ -2,7 +2,7 @@ package com.Problems;
 
 public class ExcelSheetTitle {
     public static void main(String[] args) {
-        int cnum = 701;
+        int cnum = 53;
         System.out.println(ColumnTitle(cnum));
     }
     static String ColumnTitle(int columnN) {
@@ -16,6 +16,7 @@ public class ExcelSheetTitle {
                 String temp = ans;
                 ans = String.valueOf(letters[25]);
                 ans += temp;
+                break;
             }
             else {
                 String temp = ans;
