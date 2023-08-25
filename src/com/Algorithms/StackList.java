@@ -11,6 +11,7 @@ public class StackList {
         }
         System.out.println("Printing All elements:");
         stack.printItems();
+        stack.popItem();
     }
 }
 class Stack {
@@ -24,6 +25,10 @@ class Stack {
         for (int i = arr.size() - 1; i >= 0; i--) {
             System.out.println(arr.get(i));
         }
+    }
+
+    protected void popItem() {
+        System.out.println("POPPED: "+arr.remove(0));
     }
 
 }
