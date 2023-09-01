@@ -6,23 +6,22 @@ public class SelectionSortAlgo {
     public static void main(String[] args) {
         int[] arr = {3,24,23,5,23,2,1,8,7,4};
 
-//        System.out.println(Arrays.toString(AscendingSort(arr)));
-        DescendingSort(arr);
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Ascending Order: "+Arrays.toString(AscendingSort(arr)));
+        System.out.println("Descending Order: "+Arrays.toString(DescendingSort(arr)));
     }
 
     static int[] AscendingSort(int[] arr) {
         for (int i=0; i<arr.length; i++) {
             int last = (arr.length - 1) - i;
-            int MaxIndex = getMaxIndex(arr,0,last);
+            int MaxIndex = getMaxIndex(arr, last);
             swap(arr,MaxIndex,last);
         }
         return arr;
     }
 
-    static int getMaxIndex(int[] arr, int start, int end) {
-        int max = start;
-        for (int i=start; i<end; i++) {
+    static int getMaxIndex(int[] arr, int end) {
+        int max = 0;
+        for (int i = 0; i<=end; i++) {
             if (arr[max] < arr[i]) {
                 max = i;
             }
@@ -30,9 +29,9 @@ public class SelectionSortAlgo {
         return max;
     }
 
-    static int getMinIndex(int[] arr, int start, int end) {
-        int minidx = start;
-        for (int i=start; i<end; i++) {
+    static int getMinIndex(int[] arr, int end) {
+        int minidx = 0;
+        for (int i = 0; i<=end; i++) {
             if (arr[i] < arr[minidx]) {
                 minidx = i;
             }
@@ -46,11 +45,12 @@ public class SelectionSortAlgo {
         arr[second] = temp;
     }
 
-    static void DescendingSort(int[] arr) {
+    static int[] DescendingSort(int[] arr) {
         for (int i=0; i<arr.length; i++) {
             int end = (arr.length - i) - 1;
-            int minIndex = getMinIndex(arr,0,end);
+            int minIndex = getMinIndex(arr, end);
             swap(arr,minIndex,end);
         }
+        return arr;
     }
 }
