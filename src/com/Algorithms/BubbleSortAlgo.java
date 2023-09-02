@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class BubbleSortAlgo {
     public static void main(String[] args) {
-        int[] arr = {4,32,1,9,12,67,12,11,5};
+        int[] arr = {-9,-8,0,8};
         System.out.println(Arrays.toString(sortedArray(arr)));
     }
     static int[] sortedArray(int[] arr) {
