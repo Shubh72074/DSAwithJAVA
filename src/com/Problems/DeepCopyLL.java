@@ -23,6 +23,7 @@ public class DeepCopyLL {
             }
             ans = ans.next;
         }
+
     }
     static Node DeepCopy(Node head) {
        List<Node> arr1 = new ArrayList<>();
