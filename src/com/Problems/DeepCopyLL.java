@@ -25,30 +25,25 @@ public class DeepCopyLL {
         }
     }
     static Node DeepCopy(Node head) {
-        List<Node> nodes = new ArrayList<>();
-        Node ans = new Node(0);
-        Node ans2 = ans;
-        while(head != null) {
-            nodes.add(head);
-            ans.next = new Node(head.val);
-            ans = ans.next;
-            head = head.next;
-        }
-        Node f_ans = ans.next;
-        Node temp = ans2.next;
-        Node temp2 = ans2.next;
-        int pos = 0;
-        while(temp != null) {
-            if(nodes.get(pos).random != null) {
-                for(int i=1; i<nodes.indexOf(nodes.get(pos).random); i++) {
-                    temp2 = temp2.next;
-                }
-                temp.random = temp2;
-            }
-            pos++;
-            temp = temp.next;
-        }
-        return f_ans;
+       List<Node> arr1 = new ArrayList<>();
+       List<Node> arr2 = new ArrayList<>();
+       Node ans = new Node(0);
+       Node temp_h = head;
+       Node temp_ans = ans;
+
+       while(temp_h != null) {
+           arr1.add(temp_h);
+           temp_ans.next = new Node(temp_h.val);
+           arr2.add(temp_ans.next);
+           temp_h = temp_h.next;
+           temp_ans = temp_ans.next;
+       }
+       temp_ans = ans.next;
+       for(Node node: arr1) {
+           temp_ans.random = node.random == null ? null : arr2.get(arr1.indexOf(node.random));
+           temp_ans = temp_ans.next;
+       }
+       return ans.next;
     }
 }
 
