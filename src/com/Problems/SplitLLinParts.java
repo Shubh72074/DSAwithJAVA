@@ -6,12 +6,18 @@ public class SplitLLinParts {
         h.next = new Node(122);
         h.next.next = new Node(1);
 
-        Node[] arr = new Node[5];
+        Node[] ans = new Node[5];
         int size = 0;
         while(h != null) {
             size++;
             h = h.next;
         }
+        if (size%5 == 0) {
+            int gap = size/5;
+            Node[] temp = new Node[gap];
+            for(int i=0; i<gap; i++) {
 
+            }
+        }
     }
 }
