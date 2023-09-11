@@ -1,6 +1,7 @@
 package com.Random;
 
 import java.util.PriorityQueue;
+import java.util.Stack;
 
 public class PQ {
     public static void main(String[] args) {
@@ -11,5 +12,13 @@ public class PQ {
         q.add("third");
 
         System.out.println(q.poll());
+
+        Stack s = new Stack();
+
+        s.push("ss");
+        s.push("sasa");
+        s.push("wqqw");
+
+        System.out.println(s.pop());
     }
 }
