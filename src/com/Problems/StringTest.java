@@ -8,7 +8,8 @@ public class StringTest {
         long start=new GregorianCalendar().getTimeInMillis();
         long startMemory=Runtime.getRuntime().freeMemory();
         StringBuffer sb = new StringBuffer();
-        //StringBuilder sb = new StringBuilder();
+//        StringBuilder sb = new StringBuilder();
+//        sb.append(3);
         for(int i = 0; i<10000000; i++){
             sb.append(":").append(i);
         }
