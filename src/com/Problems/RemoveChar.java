@@ -3,7 +3,7 @@ package com.Problems;
 public class RemoveChar {
     public static void main(String[] args) {
         removeCharFromString("abcbcdjfkd", 'c');
-        removeCharFromString("ABCCCCC", 'C');
+        removeCharFromString("ABCC", 'C');
         removeCharFromString("shubha", 'a');
 
     }
