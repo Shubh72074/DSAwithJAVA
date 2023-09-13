@@ -2,7 +2,7 @@ package com.Problems;
 
 public class integerMax {
     public static void main(String[] args) {
-        int a = 42;
+        int a = 8676;
         long ans = 0;
         while (a != 0) {
             int rem = a % 10;
