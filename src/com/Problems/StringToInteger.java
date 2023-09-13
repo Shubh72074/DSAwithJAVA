@@ -2,7 +2,7 @@ package com.Problems;
 
 public class StringToInteger {
     public static void main(String[] args) {
-        String nn = "42";
+        String nn = "765";
         long ans = 0;
         boolean neg = false;
         String[] n;
