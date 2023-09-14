@@ -2,8 +2,8 @@ package com.Problems;
 
 public class IndexOfNum {
     public static void main(String[] args) {
-        int[] arr = {1,3,5,7};
-        int target = 4;
+        int[] arr = {1,3,5,7,9,11};
+        int target = 10;
 
         System.out.println(searchInsert(arr,target));
     }
