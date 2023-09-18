@@ -9,7 +9,7 @@ public class FindNonRepeatingChar {
 
         System.out.println(printFirstNonRepeatingChar("abcaabcdedxy"));
         System.out.println(printFirstNonRepeatingChar("abca"));
-        System.out.println(printFirstNonRepeatingChar("aaa"));
+        System.out.println(printFirstNonRepeatingChar("aayrhessssa"));
 
     }
 
