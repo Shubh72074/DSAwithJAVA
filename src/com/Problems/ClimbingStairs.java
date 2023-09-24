@@ -2,7 +2,7 @@ package com.Problems;
 
 public class ClimbingStairs {
     public static void main(String[] args) {
-        int n = 9;
+        int n = 6;
         System.out.println(climb(n));
     }
     static int climb(int x) {
