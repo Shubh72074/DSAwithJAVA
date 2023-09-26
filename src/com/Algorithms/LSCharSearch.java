@@ -3,7 +3,7 @@ package com.Algorithms;
 public class LSCharSearch {
     public static void main(String[] args) {
         String str = "Shubham";
-        char tch = 'u';
+        char tch = 'h';
         System.out.println(search(str, tch));
     }
 
