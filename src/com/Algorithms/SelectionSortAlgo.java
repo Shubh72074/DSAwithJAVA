@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SelectionSortAlgo {
     public static void main(String[] args) {
-        int[] arr = {3,24,23,5,23,2,1,8,7,4};
+        int[] arr = {3,24,23,2,1,8,7,4};
 
         System.out.println("Ascending Order: "+Arrays.toString(AscendingSort(arr)));
         System.out.println("Descending Order: "+Arrays.toString(DescendingSort(arr)));
